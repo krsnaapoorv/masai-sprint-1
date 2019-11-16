@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+        <div id="navigation">
+            <img class="floatleft navimg" src="https://static.thenounproject.com/png/1952474-200.png" alt="wallet">
+            <h1 class="headColor">Expense Manager</h1>
+            <h3 id="usermarginleftnav" class="headColor">Apoorva Krishna</h3>
+            <img class="navimg marginleftauto" src="https://static.thenounproject.com/png/1727297-200.png" alt="">  
+        </div>
+        <div id="container">
+            <div class="balanceShow">
+                    <h4 class="avbaltext" >Available Balance:-</h3>
+                    <div id="result" class="avbaltext "></div>
+            </div>
+            <div id="form">
+                <div class="box">
+                    <h3 class="headColor" style="margin: 10px;">Credit Amount</h3>
+                    <input type="number" style="margin: 20px 10px 20px 50px;" id="credit" class="floatleft" placeholder="Enter Credit amount in rupee">
+                    <select id="creditType" style="margin: 20px 0px 20px 10px;">
+                            <option value="Salary">Salary</option>
+                            <option value="Intrest">Intrest</option>
+                            <option value="Loan">Loan</option>
+                            <option value="Gift">Gift</option>
+                            <option value="Others">Others</option>
+                    </select>
+                    <br>
+                    <input type="datetime-local" style="margin: 20px 10px 20px 50px;" id="creditDate" class="floatleft" placeholder="Enter todays Date">
+                    <button onclick="submitCredit()" style="margin-top: 20px;">Submit</button>
+                    <br>
+                    <h3 class="headColor" style="margin: 50px 10px 10px 10px;">Expense Amount</h3>
+                    <input type="number" style="margin: 20px 10px 20px 50px;" id="debit" class="floatleft" placeholder="Enter  Expense amount in rupee">
+                    <select id="expenseType" style="margin: 20px 0px 20px 10px;">
+                            <option value="Rent">Rent</option>
+                            <option value="Clothing">Cloathing</option>
+                            <option value="Drinks">Drinks</option>
+                            <option value="Education">Education</option>
+                            <option value="Food">Food</option></option>
+                            <option value="Fuel">Fuel</option></option>
+                            <option value="Medical">Medical</option></option>
+                            <option value="Travelling">Travelling</option></option>
+                            <option value="Others">Others</option></option>
+                    </select>
+                    <br>
+                    <input type="datetime-local" style="margin: 20px 10px 20px 50px;" id="expenseDate" class="floatleft" placeholder="Enter todays Date">
+                    <button onclick="submitExpense()" style="margin-top: 20px;">Submit</button>
+                    <br>
+                    <h3 class="headColor" style="margin: 30px 10px 10px 10px;">Check Balance</h3>
+                    <button onclick="showBalance()" style="margin:10px 100px 10px 50px;">Show Balance Amount</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="balancesheet">
+        <div id="CreditHeadBox1">
+            <h2 class="headColor">Income</h2>
+        </div>
+
+        <div id="amountCredBox1">
+            <h2 class="headColor">Credit-Amount</h2>
+        </div>
+        <div id="DebitHeadBox1">
+            <h2 class="headColor">Expense</h2>
+        </div>
+    
+        <div id="amountDebitBox1">
+            <h2 class="headColor">Debit-Amount</h2>
+        </div>
+        <div id="CreditHeadBox2">
+            
+        </div>
+    
+        <div id="amountCredBox2">
+            
+        </div>
+        <div id="DebitHeadBox2">
+            
+        </div>
+        
+        <div id="amountDebitBox2">
+            
+        </div>
+        <div id="totalCreditBox1">
+            <h2 class="headColor">Total Income</h2>
+        </div>
+        
+        <div id="totalCreditBox2" class="amount">
+                
+        </div>
+        <div id="totalDebitBox1">
+            <h2 class="headColor">Total Expense</h2>
+        </div>
+            
+        <div id="totalDebitBox2" class="amount">
+                
+        </div>
+
+
+    </div>
+    <script src="script.js">
+        
+    </script>
+    
+</body>
+</html>
