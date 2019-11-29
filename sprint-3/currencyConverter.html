@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>currencyConverter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="backgroundimg">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light text-center text-black" style="background-color: #FFF59D";>
+        <img class="navimg" src="https://static.thenounproject.com/png/1712643-200.png" alt="logo">
+        <h1 class="text-center mx-4">Currency Converter</h1>
+    </nav>
+    <div class="container"> 
+        <label class="my-4 font-weight-bold">From Currency: </label>   
+        <select id="contriesfrom" class="border border-success"></select>
+        
+        <br>
+        <label class="my-4 font-weight-bold">To Currency:</label>
+        <select id="contriesto" class="border border-success"></select>
+        <label class="my-4 font-weight-bold">Input Amount:</label>
+        <input type="text" id="amount" class="form-control border border-dark" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="enter the amount">
+        <br>
+        <button id="show" type="button" class="btn btn-success btn-lg" style="margin-left: 175px;">Show</button>
+        <br>
+        <label class="my-4 font-weight-bold">Resulted Amount:</label>
+        <input type="text" id="req" class="form-control border border-dark" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="Converted Amount">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
